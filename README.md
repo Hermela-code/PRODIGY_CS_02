@@ -1,10 +1,10 @@
-# Image Encryption with Pixel Permutation and Color Shifting
+#Image Encryption with Pixel Permutation and Color Shifting
 
 This is a simple Python script for encrypting images by scrambling pixel positions and shifting their color values. It uses the Python `Pillow` and `NumPy` libraries.
 
 ---
 
-##  How It Works
+##How It Works
 
 - The image is read and converted into an array of pixels.
 - The pixels are randomly shuffled based on a key you provide.
@@ -16,7 +16,7 @@ To decrypt, you'd need to reverse the exact same steps using the same key and co
 
 ---
 
-## Requirements
+##Requirements
 
 - Python 3
 - Pillow
@@ -33,20 +33,19 @@ python3 -m venv venv
 source venv/bin/activate
 pip install pillow numpy
 
-## How to Use
+##How to Use
 **python3 encrypt.py**
 
-## Settings
+##Settings
 
 You can adjust two values in encrypt.py:
 
     **key** → controls how the pixels are shuffled
 
     **color_shift** → controls how much each color value is changed
-DEMO - ** encrypt_image("sample.png", "encrypted_sample.png", key=9876, color_shift=50)
-**
+DEMO - **encrypt_image("sample.png", "encrypted_sample.png", key=9876, color_shift=50)**
 
-## Notes
+##Notes
 
 Always use .png images to avoid compression issues.
 
